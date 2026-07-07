@@ -1,0 +1,238 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMtVa3J2p+92aHcjCD1ZBrx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jesteenaec2529-collab/s2codebase/blob/main/s3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Lab Session 1: Python’s Scientific Stack\n",
+        ">Aim\n",
+        "\n",
+        "This session introduces the fundamental libraries that make Python a powerhouse for engineering.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "0SKyw1c3uCrc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Excercise 1: The Core Trio - `NumPy`, `Matplotlib`, and `SymPy`**\n",
+        "\n",
+        "**Objective:** To get comfortable creating arrays, plotting data, and performing symbolic calculations.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "IYt5CHxhv4lC"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##**Python basics- Recap**\n",
+        "\n",
+        "###Hello World\n",
+        "\n",
+        "The classic first program for any language."
+      ],
+      "metadata": {
+        "id": "TmJKfoZAxXqh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello, B.Tech Students!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Tgfdug1QxzCA",
+        "outputId": "1ec30f42-19e8-47be-99d8-2ff6b50d663c"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello, B.Tech Students!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Variables and Data Types\n",
+        "\n",
+        "Introduction to different data types like integers, floats, and strings."
+      ],
+      "metadata": {
+        "id": "SaoBtUhIyC1o"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10  # Integer\n",
+        "y = 3.5  # Float\n",
+        "name = \"Python\"  # String\n",
+        "is_student = True  # Boolean\n",
+        "\n",
+        "print(x, y, name, is_student)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C561DZguybpg",
+        "outputId": "caf2fbb8-6af9-4c95-d0c0-331af9f56de8"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 3.5 Python True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Conditional Statements\n",
+        "\n",
+        "Using if, elif, and else statements."
+      ],
+      "metadata": {
+        "id": "TMeD8b4Yym5A"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10  # Integer\n",
+        "if x>5:\n",
+        "    print(\"x is greater than 5\")\n",
+        "elif x==5:\n",
+        "    print(\"x is 5\")\n",
+        "else:\n",
+        "    print(\"x is less than 5\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PNJJGfSVytHX",
+        "outputId": "41749c61-cecd-4bca-cbe3-96782057d563"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is greater than 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Loops/ Iteratives\n",
+        "Using `for` and `while` loops."
+      ],
+      "metadata": {
+        "id": "yRSjegdRyy5w"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# For loop\n",
+        "for i in range(5):\n",
+        "    print(\"Iteration:\", i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xj7row_wy6f3",
+        "outputId": "df8b978b-4d16-4320-bf0d-229474cb65d9"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Iteration: 0\n",
+            "Iteration: 1\n",
+            "Iteration: 2\n",
+            "Iteration: 3\n",
+            "Iteration: 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# While loop\n",
+        "n = 0\n",
+        "while n < 3:\n",
+        "    print(\"While loop iteration:\", n)\n",
+        "    n += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_ZCIO2ILzBOn",
+        "outputId": "0e06e16b-2607-421f-d08c-dfa2cc11b85b"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "While loop iteration: 0\n",
+            "While loop iteration: 1\n",
+            "While loop iteration: 2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
