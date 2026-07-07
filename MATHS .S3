@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyN6mfvR2uekhYNRD/9ze9Xz",
+      "authorship_tag": "ABX9TyObwsKGuWV5eF9I7JHXjm/i",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -27,13 +27,28 @@
       ]
     },
     {
-      "cell_type": "code",
-      "execution_count": null,
+      "cell_type": "markdown",
+      "source": [
+        "# Lab Session 1: Python’s Scientific Stack\n",
+        ">Aim\n",
+        "\n",
+        "This session introduces the fundamental libraries that make Python a powerhouse for engineering.\n",
+        "\n"
+      ],
       "metadata": {
-        "id": "BtG74kG1r8m4"
-      },
-      "outputs": [],
-      "source": []
+        "id": "0SKyw1c3uCrc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Excercise 1: The Core Trio - `NumPy`, `Matplotlib`, and `SymPy`**\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "IYt5CHxhv4lC"
+      }
     }
   ]
 }
